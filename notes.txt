@@ -1,0 +1,41 @@
+Status CAN ID: 0x142
+timestamp vehiclecan-öffnen.trc: 2971978
+
+0x3C2: window buttons (left?)
+0x3C3: window buttons (right?)
+0x3B3: UI buttons
+
+
+
+open trunk:
+cansend can0 3B3#8A80050000006000
+
+turn on lights:
+cansend can0 3B3#8882050000006000
+
+open glove box:
+cansend can0 3B3#8980050000006000
+
+
+unmodified / reset:
+cansend can0 3B3#8880050000006000
+
+
+
+hazard lights:
+cansend can0 3C2#0855555500005545
+
+horn:
+cansend can0 3C2#0455555500005545
+
+unmodified / reset:
+cansend can0 3C2#0055555500005545
+
+
+
+window down:
+cansend can0 3C2#2955000008000000
+
+unmodified / reset:
+cansend can0 3C2#2955000000000000
+
